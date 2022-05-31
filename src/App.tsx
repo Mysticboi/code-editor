@@ -4,7 +4,7 @@ import Editor from '@monaco-editor/react';
 function App() {
   return (
     <div>
-      Welcome to my Code Editor
+      <p className="text-center text-xl">Welcome to my Code Editor</p>
       <Editor
         height="90vh"
         defaultLanguage="javascript"
