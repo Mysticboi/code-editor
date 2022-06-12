@@ -1,0 +1,213 @@
+[{
+    "name": "VS Code Dark",
+    "label": "VS Code Dark",
+    "value": "vs-dark"
+}, {
+    "name": "Light",
+    "label": "Light",
+    "value": "light"
+}, {
+    "name": "Active4D",
+    "label": "Active4D",
+    "value": "active4d"
+}, {
+    "name": "All Hallows Eve",
+    "label": "All Hallows Eve",
+    "value": "all-hallows-eve"
+}, {
+    "name": "Amy",
+    "label": "Amy",
+    "value": "amy"
+}, {
+    "name": "Birds of Paradise",
+    "label": "Birds of Paradise",
+    "value": "birds-of-paradise"
+}, {
+    "name": "Blackboard",
+    "label": "Blackboard",
+    "value": "blackboard"
+}, {
+    "name": "Brilliance Black",
+    "label": "Brilliance Black",
+    "value": "brilliance-black"
+}, {
+    "name": "Brilliance Dull",
+    "label": "Brilliance Dull",
+    "value": "brilliance-dull"
+}, {
+    "name": "Chrome DevTools",
+    "label": "Chrome DevTools",
+    "value": "chrome-devtools"
+}, {
+    "name": "Clouds Midnight",
+    "label": "Clouds Midnight",
+    "value": "clouds-midnight"
+}, {
+    "name": "Clouds",
+    "label": "Clouds",
+    "value": "clouds"
+}, {
+    "name": "Cobalt",
+    "label": "Cobalt",
+    "value": "cobalt"
+}, {
+    "name": "Cobalt2",
+    "label": "Cobalt2",
+    "value": "cobalt2"
+}, {
+    "name": "Dawn",
+    "label": "Dawn",
+    "value": "dawn"
+}, {
+    "name": "Dracula",
+    "label": "Dracula",
+    "value": "dracula"
+}, {
+    "name": "Dreamweaver",
+    "label": "Dreamweaver",
+    "value": "dreamweaver"
+}, {
+    "name": "Eiffel",
+    "label": "Eiffel",
+    "value": "eiffel"
+}, {
+    "name": "Espresso Libre",
+    "label": "Espresso Libre",
+    "value": "espresso-libre"
+}, {
+    "name": "GitHub",
+    "label": "GitHub",
+    "value": "github"
+}, {
+    "name": "IDLE",
+    "label": "IDLE",
+    "value": "idle"
+}, {
+    "name": "Katzenmilch",
+    "label": "Katzenmilch",
+    "value": "katzenmilch"
+}, {
+    "name": "Kuroir Theme",
+    "label": "Kuroir Theme",
+    "value": "kuroir-theme"
+}, {
+    "name": "LAZY",
+    "label": "LAZY",
+    "value": "lazy"
+}, {
+    "name": "MagicWB (Amiga)",
+    "label": "MagicWB (Amiga)",
+    "value": "magicwb--amiga-"
+}, {
+    "name": "Merbivore Soft",
+    "label": "Merbivore Soft",
+    "value": "merbivore-soft"
+}, {
+    "name": "Merbivore",
+    "label": "Merbivore",
+    "value": "merbivore"
+}, {
+    "name": "Monokai Bright",
+    "label": "Monokai Bright",
+    "value": "monokai-bright"
+}, {
+    "name": "Monokai",
+    "label": "Monokai",
+    "value": "monokai"
+}, {
+    "name": "Night Owl",
+    "label": "Night Owl",
+    "value": "night-owl"
+}, {
+    "name": "Nord",
+    "label": "Nord",
+    "value": "nord"
+}, {
+    "name": "Oceanic Next",
+    "label": "Oceanic Next",
+    "value": "oceanic-next"
+}, {
+    "name": "Pastels on Dark",
+    "label": "Pastels on Dark",
+    "value": "pastels-on-dark"
+}, {
+    "name": "Slush and Poppies",
+    "label": "Slush and Poppies",
+    "value": "slush-and-poppies"
+}, {
+    "name": "Solarized-dark",
+    "label": "Solarized-dark",
+    "value": "solarized-dark"
+}, {
+    "name": "Solarized-light",
+    "label": "Solarized-light",
+    "value": "solarized-light"
+}, {
+    "name": "SpaceCadet",
+    "label": "SpaceCadet",
+    "value": "spacecadet"
+}, {
+    "name": "Sunburst",
+    "label": "Sunburst",
+    "value": "sunburst"
+}, {
+    "name": "Textmate (Mac Classic)",
+    "label": "Textmate (Mac Classic)",
+    "value": "textmate--mac-classic-"
+}, {
+    "name": "Tomorrow-Night-Blue",
+    "label": "Tomorrow-Night-Blue",
+    "value": "tomorrow-night-blue"
+}, {
+    "name": "Tomorrow-Night-Bright",
+    "label": "Tomorrow-Night-Bright",
+    "value": "tomorrow-night-bright"
+}, {
+    "name": "Tomorrow-Night-Eighties",
+    "label": "Tomorrow-Night-Eighties",
+    "value": "tomorrow-night-eighties"
+}, {
+    "name": "Tomorrow-Night",
+    "label": "Tomorrow-Night",
+    "value": "tomorrow-night"
+}, {
+    "name": "Tomorrow",
+    "label": "Tomorrow",
+    "value": "tomorrow"
+}, {
+    "name": "Twilight",
+    "label": "Twilight",
+    "value": "twilight"
+}, {
+    "name": "Upstream Sunburst",
+    "label": "Upstream Sunburst",
+    "value": "upstream-sunburst"
+}, {
+    "name": "Vibrant Ink",
+    "label": "Vibrant Ink",
+    "value": "vibrant-ink"
+}, {
+    "name": "Xcode_default",
+    "label": "Xcode_default",
+    "value": "xcode-default"
+}, {
+    "name": "Zenburnesque",
+    "label": "Zenburnesque",
+    "value": "zenburnesque"
+}, {
+    "name": "iPlastic",
+    "label": "iPlastic",
+    "value": "iplastic"
+}, {
+    "name": "idleFingers",
+    "label": "idleFingers",
+    "value": "idlefingers"
+}, {
+    "name": "krTheme",
+    "label": "krTheme",
+    "value": "krtheme"
+}, {
+    "name": "monoindustrial",
+    "label": "monoindustrial",
+    "value": "monoindustrial"
+}]
