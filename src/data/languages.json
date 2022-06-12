@@ -19,36 +19,6 @@
     "value": "basic",
     "label": "Basic (FBC 1.07.1)"
 }, {
-    "id": 75,
-    "name": "C (Clang 7.0.1)",
-    "value": "c",
-    "label": "C (Clang 7.0.1)"
-}, {
-    "id": 76,
-    "name": "C++ (Clang 7.0.1)",
-    "value": "cpp",
-    "label": "C++ (Clang 7.0.1)"
-}, {
-    "id": 48,
-    "name": "C (GCC 7.4.0)",
-    "value": "c",
-    "label": "C (GCC 7.4.0)"
-}, {
-    "id": 52,
-    "name": "C++ (GCC 7.4.0)",
-    "value": "cpp",
-    "label": "C++ (GCC 7.4.0)"
-}, {
-    "id": 49,
-    "name": "C (GCC 8.3.0)",
-    "value": "c",
-    "label": "C (GCC 8.3.0)"
-}, {
-    "id": 53,
-    "name": "C++ (GCC 8.3.0)",
-    "value": "cpp",
-    "label": "C++ (GCC 8.3.0)"
-}, {
     "id": 50,
     "name": "C (GCC 9.2.0)",
     "value": "c",

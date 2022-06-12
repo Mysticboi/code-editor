@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
+
 import languages from '../../data/languages.json';
+import selectStyles from '../../styles/selectStyles.js';
 
 type Language = {
   id: Number;
@@ -23,6 +25,7 @@ function LanguageSelect() {
       options={languages}
       value={language}
       onChange={(newValue) => setLanguage(newValue)}
+      styles={selectStyles}
     />
   );
 }

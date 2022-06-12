@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Editor from '@monaco-editor/react';
-import Container from './Container';
+
+import './container.scss';
 
 const initValue = "console.log('Hello Code Editor');";
 
@@ -12,7 +13,7 @@ function CodeEditor() {
   };
 
   return (
-    <Container>
+    <div className="container">
       <Editor
         height="90vh"
         width="100%"
@@ -22,7 +23,7 @@ function CodeEditor() {
         value={editorValue}
         onChange={handleValueChange}
       />
-    </Container>
+    </div>
   );
 }
 
