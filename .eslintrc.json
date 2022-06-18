@@ -39,14 +39,16 @@
             "endOfLine": "auto"
         }],
         "react/no-unescaped-entities": "off",
-        "no-console": "warn",
+        "no-console": "off",
         "no-shadow": "off",
         "@typescript-eslint/no-empty-function": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "react/jsx-props-no-spreading": "off",
         "no-underscore-dangle": "off",
         "react/require-default-props": "off",
-        "no-restricted-globals": "off"
+        "no-restricted-globals": "off",
+        "default-param-last":"off",
+        "no-param-reassign": "off"
     },
     "settings": {
         "import/resolver":{
