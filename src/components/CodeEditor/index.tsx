@@ -1,15 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Editor from '@monaco-editor/react';
 
-import './container.scss';
+import { useAppDispatch, useAppSelector } from '../../hooks/redux';
+import { selectTheme } from '../../redux/theme';
 
-const initValue = "console.log('Hello Code Editor');";
+import './container.scss';
+import {
+  changeEditorValue,
+  selectEditorValue,
+  selectLanguage,
+} from '../../redux/editor';
 
 function CodeEditor() {
-  const [editorValue, setEditorValue] = useState<string | undefined>(initValue);
+  const editorValue = useAppSelector(selectEditorValue);
+  const theme = useAppSelector(selectTheme).value;
+  const language = useAppSelector(selectLanguage).value;
+
+  const dispatch = useAppDispatch();
 
   const handleValueChange = (value: string | undefined) => {
-    setEditorValue(value);
+    dispatch(changeEditorValue(value));
   };
 
   return (
@@ -17,11 +27,10 @@ function CodeEditor() {
       <Editor
         height="90vh"
         width="100%"
-        defaultLanguage="javascript"
-        defaultValue={initValue}
-        theme="vs-dark"
+        theme={theme}
         value={editorValue}
         onChange={handleValueChange}
+        language={language.toString()}
       />
     </div>
   );

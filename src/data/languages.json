@@ -4,6 +4,31 @@
     "value": "javascript",
     "label": "JavaScript (Node.js 12.14.0)"
 }, {
+    "id": 74,
+    "name": "TypeScript (3.7.4)",
+    "value": "typescript",
+    "label": "TypeScript (3.7.4)"
+},{
+    "id": 62,
+    "name": "Java (OpenJDK 13.0.1)",
+    "value": "java",
+    "label": "Java (OpenJDK 13.0.1)"
+},{
+    "id": 71,
+    "name": "Python (3.8.1)",
+    "value": "python",
+    "label": "Python (3.8.1)"
+},{
+    "id": 50,
+    "name": "C (GCC 9.2.0)",
+    "value": "c",
+    "label": "C (GCC 9.2.0)"
+}, {
+    "id": 54,
+    "name": "C++ (GCC 9.2.0)",
+    "value": "cpp",
+    "label": "C++ (GCC 9.2.0)"
+},{
     "id": 45,
     "name": "Assembly (NASM 2.14.02)",
     "value": "assembly",
@@ -18,16 +43,6 @@
     "name": "Basic (FBC 1.07.1)",
     "value": "basic",
     "label": "Basic (FBC 1.07.1)"
-}, {
-    "id": 50,
-    "name": "C (GCC 9.2.0)",
-    "value": "c",
-    "label": "C (GCC 9.2.0)"
-}, {
-    "id": 54,
-    "name": "C++ (GCC 9.2.0)",
-    "value": "cpp",
-    "label": "C++ (GCC 9.2.0)"
 }, {
     "id": 86,
     "name": "Clojure (1.10.1)",
@@ -94,11 +109,6 @@
     "value": "haskell",
     "label": "Haskell (GHC 8.8.1)"
 }, {
-    "id": 62,
-    "name": "Java (OpenJDK 13.0.1)",
-    "value": "java",
-    "label": "Java (OpenJDK 13.0.1)"
-}, {
     "id": 78,
     "name": "Kotlin (1.3.70)",
     "value": "kotlin",
@@ -148,12 +158,7 @@
     "name": "Prolog (GNU Prolog 1.4.5)",
     "value": "prolog",
     "label": "Prolog (GNU Prolog 1.4.5)"
-}, {
-    "id": 70,
-    "name": "Python (2.7.17)",
-    "value": "python",
-    "label": "Python (2.7.17)"
-}, {
+},  {
     "id": 71,
     "name": "Python (3.8.1)",
     "value": "python",
@@ -188,12 +193,7 @@
     "name": "Swift (5.2.3)",
     "value": "swift",
     "label": "Swift (5.2.3)"
-}, {
-    "id": 74,
-    "name": "TypeScript (3.7.4)",
-    "value": "typescript",
-    "label": "TypeScript (3.7.4)"
-}, {
+},  {
     "id": 84,
     "name": "Visual Basic.Net (vbnc 0.0.0.5943)",
     "value": "vbnet",

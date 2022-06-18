@@ -6,11 +6,7 @@
     "name": "Light",
     "label": "Light",
     "value": "light"
-}, {
-    "name": "Active4D",
-    "label": "Active4D",
-    "value": "active4d"
-}, {
+},  {
     "name": "All Hallows Eve",
     "label": "All Hallows Eve",
     "value": "all-hallows-eve"

@@ -3,3 +3,10 @@ export type Theme = {
   label: string;
   value: string;
 };
+
+export type Language = {
+  id: number;
+  name: string;
+  value: string;
+  label: string;
+};

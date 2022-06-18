@@ -1,9 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
+
 import themeReducer from './theme';
+import editorReducer from './editor';
 
 const store = configureStore({
   reducer: {
     theme: themeReducer,
+    editor: editorReducer,
   },
 });
 

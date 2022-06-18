@@ -1,30 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Select from 'react-select';
 
 import languages from '../../data/languages.json';
+import { useAppDispatch, useAppSelector } from '../../hooks/redux';
+import { changeLanguage, selectLanguage } from '../../redux/editor';
 import selectStyles from '../../styles/selectStyles.js';
 
-type Language = {
-  id: Number;
-  name: String;
-  value: String;
-  label: String;
-};
+import { Language } from '../../types';
 
 function LanguageSelect() {
-  const [language, setLanguage] = useState<Language | null>({
-    id: 63,
-    name: 'JavaScript (Node.js 12.14.0)',
-    value: 'javascript',
-    label: 'JavaScript (Node.js 12.14.0)',
-  });
+  const language = useAppSelector(selectLanguage);
+  const dispatch = useAppDispatch();
 
-  console.log(language);
+  console.log('language', language);
+
+  const handleChange = (newValue: Language | null) => {
+    if (newValue) dispatch(changeLanguage(newValue));
+  };
+
   return (
     <Select
       options={languages}
       value={language}
-      onChange={(newValue) => setLanguage(newValue)}
+      onChange={handleChange}
       styles={selectStyles}
     />
   );
