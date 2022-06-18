@@ -6,7 +6,7 @@ import themes from '../../data/themes.json';
 import { changeThemeWithMonaco, selectTheme } from '../../redux/theme';
 
 import { Theme } from '../../types';
-import selectStyles from '../../styles/selectStyles.js';
+import { selectThemeStyles } from '../../styles/selectStyles';
 
 function ThemeSelect() {
   const theme = useAppSelector(selectTheme);
@@ -21,7 +21,7 @@ function ThemeSelect() {
       options={themes}
       value={theme}
       onChange={handleChange}
-      styles={selectStyles}
+      styles={selectThemeStyles}
     />
   );
 }
