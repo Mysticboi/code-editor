@@ -20,6 +20,6 @@ const moreOptions = [
   },
 ];
 
-const finalOptions = [...moreOptions, ...options];
+const finalOptions = options.concat(moreOptions);
 
 fs.writeFileSync('./themes.json', JSON.stringify(finalOptions));
