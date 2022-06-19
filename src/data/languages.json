@@ -9,6 +9,11 @@
     "value": "typescript",
     "label": "TypeScript (3.7.4)"
 },{
+    "id": 0,
+    "name":"Markdown (With Preview)",
+    "value":"markdown",
+    "label":"Markdown (With Preview)"
+},{
     "id": 62,
     "name": "Java (OpenJDK 13.0.1)",
     "value": "java",

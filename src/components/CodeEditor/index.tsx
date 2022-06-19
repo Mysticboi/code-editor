@@ -25,8 +25,8 @@ function CodeEditor() {
   return (
     <div className="container">
       <Editor
-        height="90vh"
         width="100%"
+        height="45em"
         theme={theme}
         value={editorValue}
         onChange={handleValueChange}

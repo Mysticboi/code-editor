@@ -1,0 +1,51 @@
+$border: solid black 1.5px;
+
+.strip {
+  background-color: #459090;
+  height: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  border: $border;
+}
+
+.preview-container {
+  min-width: 15em;
+  margin-top: 3.5em;
+  margin-left: 10em;
+  margin-bottom: 2em;
+  max-width: 50em;
+}
+
+#preview {
+  width: 100%;
+  background-color: #c0d8d8;
+  border: $border;
+}
+
+.strip-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+table,
+td {
+  border: $border;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+img {
+  display: block;
+  max-width: 60%;
+  margin: 2rem auto;
+}
