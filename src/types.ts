@@ -4,9 +4,6 @@ export type Theme = {
   value: string;
 };
 
-export type Language = {
+export type Language = Theme & {
   id: number;
-  name: string;
-  value: string;
-  label: string;
 };
