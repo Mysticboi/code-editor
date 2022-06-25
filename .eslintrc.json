@@ -48,7 +48,8 @@
         "react/require-default-props": "off",
         "no-restricted-globals": "off",
         "default-param-last":"off",
-        "no-param-reassign": "off"
+        "no-param-reassign": "off",
+        "react/function-component-definition":"off"
     },
     "settings": {
         "import/resolver":{

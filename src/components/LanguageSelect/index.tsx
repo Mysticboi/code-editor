@@ -8,7 +8,7 @@ import { selectLanguageStyles } from '../../styles/selectStyles';
 
 import { Language } from '../../types';
 
-function LanguageSelect() {
+const LanguageSelect = () => {
   const language = useAppSelector(selectLanguage);
   const dispatch = useAppDispatch();
 
@@ -26,6 +26,6 @@ function LanguageSelect() {
       styles={selectLanguageStyles}
     />
   );
-}
+};
 
 export default LanguageSelect;

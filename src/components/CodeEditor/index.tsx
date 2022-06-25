@@ -11,7 +11,7 @@ import {
   selectLanguage,
 } from '../../redux/editor';
 
-function CodeEditor() {
+const CodeEditor = () => {
   const editorValue = useAppSelector(selectEditorValue);
   const theme = useAppSelector(selectTheme).value;
   const language = useAppSelector(selectLanguage).value;
@@ -34,6 +34,6 @@ function CodeEditor() {
       />
     </div>
   );
-}
+};
 
 export default CodeEditor;

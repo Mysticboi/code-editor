@@ -8,7 +8,7 @@ import { changeThemeWithMonaco, selectTheme } from '../../redux/theme';
 import { Theme } from '../../types';
 import { selectThemeStyles } from '../../styles/selectStyles';
 
-function ThemeSelect() {
+const ThemeSelect = () => {
   const theme = useAppSelector(selectTheme);
 
   const dispatch = useAppDispatch();
@@ -24,6 +24,6 @@ function ThemeSelect() {
       styles={selectThemeStyles}
     />
   );
-}
+};
 
 export default ThemeSelect;

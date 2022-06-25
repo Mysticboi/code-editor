@@ -8,7 +8,7 @@ import { selectLanguage } from '../redux/editor';
 
 import './app.scss';
 
-function App() {
+const App = () => {
   const language = useAppSelector(selectLanguage).value;
   return (
     <>
@@ -16,7 +16,7 @@ function App() {
       <div className="app-container">
         <div>
           <div className="container-select">
-            Language : <LanguageSelect />
+            <LanguageSelect />
             <ThemeSelect />
           </div>
           <CodeEditor />
@@ -26,6 +26,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;

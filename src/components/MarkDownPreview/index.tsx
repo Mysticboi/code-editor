@@ -15,7 +15,7 @@ marked.setOptions({
   breaks: true,
 });
 
-function MarkDownPreview() {
+const MarkDownPreview = () => {
   const editorValue = useAppSelector(selectEditorValue);
 
   return (
@@ -32,6 +32,6 @@ function MarkDownPreview() {
       />
     </div>
   );
-}
+};
 
 export default MarkDownPreview;
