@@ -25,8 +25,10 @@ export type GetSubmissionResponse = {
   stderr: string | null;
   compile_output: string | null;
   message: string | null;
-  status: {
-    id: number;
-    description: string;
-  };
+  status: Status;
+};
+
+export type Status = {
+  id: number;
+  description: string;
 };

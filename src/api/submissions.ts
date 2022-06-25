@@ -1,5 +1,4 @@
 import axios, { AxiosResponse } from 'axios';
-import apikey from '../apikey.json';
 import {
   SubmissionRequest,
   GetSubmissionResponse,
@@ -7,21 +6,44 @@ import {
 } from '../types';
 
 const BASE_URL = 'https://judge0-ce.p.rapidapi.com';
-const config = {
-  params: { base64_encoded: 'true', fields: '*' },
-  headers: {
-    'content-type': 'application/json',
-    'Content-Type': 'application/json',
-    ...apikey,
-  },
+
+const getConfig = async () => {
+  let apikey: {
+    'X-RapidAPI-Key': string;
+    'X-RapidAPI-Host': string;
+  };
+
+  if (process.env.NODE_ENV === 'development') {
+    apikey = await import('../apikey.json');
+  } else {
+    apikey = {
+      'X-RapidAPI-Key': process.env.REACT_APP_KEY || '',
+      'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com',
+    };
+  }
+
+  const config = {
+    params: { base64_encoded: 'true', fields: '*' },
+    headers: {
+      'content-type': 'application/json',
+      'Content-Type': 'application/json',
+      ...apikey,
+    },
+  };
+
+  return config;
 };
 
-export const postSubmission = (
+export const postSubmission = async (
   submission: SubmissionRequest
-): Promise<AxiosResponse<PostSubmissionResponse>> =>
-  axios.post(`${BASE_URL}/submissions`, submission, config);
+): Promise<AxiosResponse<PostSubmissionResponse>> => {
+  const config = await getConfig();
+  return axios.post(`${BASE_URL}/submissions`, submission, config);
+};
 
-export const getSubmission = (
+export const getSubmission = async (
   submissionToken: string
-): Promise<AxiosResponse<GetSubmissionResponse>> =>
-  axios.get(`${BASE_URL}/submissions/${submissionToken}`, config);
+): Promise<AxiosResponse<GetSubmissionResponse>> => {
+  const config = await getConfig();
+  return axios.get(`${BASE_URL}/submissions/${submissionToken}`, config);
+};
