@@ -1,8 +1,4 @@
-.paragraph {
-  font-size: 40px;
-  text-align: center;
-  color: lightskyblue;
-}
+@import '../styles/global';
 
 .container-select {
   display: flex;
@@ -10,6 +6,41 @@
 }
 
 .app-container {
-  width: 100%;
+  width: 100;
   display: flex;
+  margin-top: 2em;
+}
+
+.output-container {
+  margin-left: 2em;
+  width: 80%;
+  margin-right: 1em;
+}
+
+.output {
+  background-color: #1e1e1e;
+  color: $main-color;
+  width: 95%;
+  height: 8em;
+  padding: 1em;
+  @include border;
+}
+
+#input {
+  resize: vertical;
+  width: 94%;
+  height: 10em;
+  padding: 1em;
+  @include shadow-border;
+  font-size: 1.5em;
+}
+
+.compile-button {
+  @include shadow-border;
+  float: right;
+  margin-top: 1em;
+  height: 3em;
+  width: 12em;
+  font-size: 1em;
+  background-color: white;
 }

@@ -1,0 +1,15 @@
+$main-color: lightskyblue;
+
+@mixin border {
+  border-radius: 15px;
+  border: 5px solid #000000;
+}
+
+@mixin shadow-border {
+  @include border;
+  box-shadow: 3px 3px 0px 0px;
+  &:hover {
+    box-shadow: none;
+    border: 3px solid $main-color;
+  }
+}

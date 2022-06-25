@@ -11,20 +11,29 @@ import './app.scss';
 const App = () => {
   const language = useAppSelector(selectLanguage).value;
   return (
-    <>
-      <p className="paragraph">Welcome to my code editor</p>
-      <div className="app-container">
-        <div>
-          <div className="container-select">
-            <LanguageSelect />
-            <ThemeSelect />
-          </div>
-          <CodeEditor />
+    <div className="app-container">
+      <div>
+        <div className="container-select">
+          <LanguageSelect />
+          <ThemeSelect />
         </div>
-
-        <div>{language === 'markdown' && <MarkDownPreview />}</div>
+        <CodeEditor />
       </div>
-    </>
+
+      {language === 'markdown' ? (
+        <MarkDownPreview />
+      ) : (
+        <div className="output-container">
+          <h2>Output</h2>
+          <div className="output">4</div>
+          <h2>Input</h2>
+          <textarea id="input" placeholder="Input" spellCheck={false} />
+          <button type="button" className="compile-button">
+            Compile and Execute
+          </button>
+        </div>
+      )}
+    </div>
   );
 };
 

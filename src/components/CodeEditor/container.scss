@@ -1,7 +1,8 @@
+@import '../../styles/global';
+
 .container {
   min-height: 45em;
-  border-radius: 15px;
-  border: 5px solid #000000;
-  box-shadow: 10px 5px 5px lightskyblue;
-  width: 50em;
+  box-shadow: 10px 5px 5px $main-color;
+  width: 65em;
+  @include border;
 }
