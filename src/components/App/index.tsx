@@ -30,7 +30,7 @@ const App = () => {
           <h2>Input</h2>
           <textarea id="input" placeholder="Input" spellCheck={false} />
           <button type="button" className="compile-button">
-            Compile and Execute
+            <div className="loader" />
           </button>
         </div>
       )}
