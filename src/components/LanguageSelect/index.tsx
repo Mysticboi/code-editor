@@ -12,8 +12,6 @@ const LanguageSelect = () => {
   const language = useAppSelector(selectLanguage);
   const dispatch = useAppDispatch();
 
-  console.log('language', language);
-
   const handleChange = (newValue: Language | null) => {
     if (newValue) dispatch(changeLanguage(newValue));
   };
