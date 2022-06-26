@@ -13,7 +13,7 @@ const getStyles = <T>(): StylesConfig<T, isMulti> => ({
     border: '3px solid black',
     ':hover': {
       boxShadow: 'none',
-      border: '3px solid lightskyblue',
+      border: '3px solid skyblue',
     },
     borderRadius: '1em',
     marginLeft: '2em',
