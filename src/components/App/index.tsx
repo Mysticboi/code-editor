@@ -1,11 +1,11 @@
 import React from 'react';
 
-import CodeEditor from '../components/CodeEditor';
-import LanguageSelect from '../components/LanguageSelect';
-import MarkDownPreview from '../components/MarkDownPreview';
-import ThemeSelect from '../components/ThemeSelect';
-import { useAppSelector } from '../hooks/redux';
-import { selectLanguage } from '../redux/editor';
+import CodeEditor from '../CodeEditor';
+import LanguageSelect from '../LanguageSelect';
+import MarkDownPreview from '../MarkDownPreview';
+import ThemeSelect from '../ThemeSelect';
+import { useAppSelector } from '../../hooks/redux';
+import { selectLanguage } from '../../redux/editor';
 
 import './app.scss';
 

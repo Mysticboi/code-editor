@@ -1,4 +1,3 @@
-// test-utils.jsx
 import React, { ReactNode, ReactElement } from 'react';
 import { render as rtlRender } from '@testing-library/react';
 import { configureStore } from '@reduxjs/toolkit';
@@ -8,6 +7,8 @@ import themeReducer from '../redux/theme';
 import editorReducer from '../redux/editor';
 import { Store } from '../redux/store';
 
+// Writing a new render function that wraps the original one and provides a store
+// See more on https://redux.js.org/usage/writing-tests
 const render = (
   ui: ReactElement,
   {
