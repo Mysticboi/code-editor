@@ -1,6 +1,6 @@
 @import '../../styles/global';
 
-.container-select {
+.select-container {
   display: flex;
   margin-bottom: 1em;
   align-items: center;
@@ -71,6 +71,10 @@
   width: 1.5em;
   height: 1.5em;
   animation: spin 1s linear infinite;
+}
+
+h1 a{
+  margin-right: 7px;
 }
 
 @keyframes spin {

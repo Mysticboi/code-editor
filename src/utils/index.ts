@@ -26,10 +26,11 @@ export const postSubmissionAndGetResponse = async (
 
     let i = 0;
     let status, stdout, stderr, time, compileOutput, memory;
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 3; i++) {
       console.log('Fetching submission...', i);
       await sleep(2000);
       const getResponse = await getSubmission(token);
+      console.log('gerResponse', getResponse);
       ({
         status,
         stdout,

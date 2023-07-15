@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 import CodeEditor from '../CodeEditor';
 import LanguageSelect from '../LanguageSelect';
@@ -91,10 +92,11 @@ const App = () => {
         <a target="_blank" rel="noreferrer" href="https://github.com/Mysticboi">
           Walid
         </a>
+        <GitHubIcon fontSize="large" />
       </h1>
       <div className="app-container">
         <div>
-          <div className="container-select">
+          <div className="select-container">
             <h2>Language: </h2>
             <LanguageSelect /> <h2>Theme: </h2>
             <ThemeSelect />
