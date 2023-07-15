@@ -3,6 +3,7 @@
 .container-select {
   display: flex;
   margin-bottom: 1em;
+  align-items: center;
 }
 
 .app-container {
@@ -57,6 +58,12 @@
   align-items: center;
 }
 
+.made-by{
+  color:rgb(105, 84, 59);
+  text-align: right;
+  margin-right: 2em;
+}
+
 .loader {
   border: 0.5em solid dimgray;
   border-top: 0.5em solid skyblue;
@@ -74,3 +81,4 @@
     transform: rotate(360deg);
   }
 }
+

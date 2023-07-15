@@ -5,7 +5,8 @@ import { selectEditorValue } from '../../redux/editor';
 import './markdownpreview.scss';
 
 const renderer = new marked.Renderer();
-renderer.link = (href, text) => `<a target="_blank" href="${href}">${text}</a>`;
+renderer.link = (href, title, text) =>
+  `<a target="_blank" href="${href}">${text}</a>`;
 
 marked.setOptions({
   renderer,

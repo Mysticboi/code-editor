@@ -16,7 +16,8 @@ const getStyles = <T>(): StylesConfig<T, isMulti> => ({
       border: '3px solid skyblue',
     },
     borderRadius: '1em',
-    marginLeft: '2em',
+    marginLeft: '1em',
+    marginRight: '2em',
   }),
   option: (styles) => ({
     ...styles,
