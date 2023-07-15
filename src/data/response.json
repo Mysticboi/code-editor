@@ -1,0 +1,43 @@
+{
+  "source_code": "ZnVuY3Rpb24gZml6emJ1enoobnVtKXsKICAgIGZvcihsZXQgaT0xOyBpIDw9\nIG51bTsgaSsrKXsKICAgICAgICBpZihpICUgMTUgPT0gMCl7CiAgICAgICAg\nY29uc29sZS5sb2coIkZpenpCdXp6Iik7CiAgICAgICAgfQogICAgICAgIGVs\nc2UgaWYoaSAlIDUgPT0gMCl7CiAgICAgICAgY29uc29sZS5sb2coIkJ1enoi\nKTsKICAgICAgICB9CiAgICAgICAgZWxzZSBpZihpICUgMyA9PSAwKXsKICAg\nICAgICBjb25zb2xlLmxvZygiRml6eiIpOwogICAgICAgIH0KICAgICAgICBl\nbHNlIGNvbnNvbGUubG9nKGkpOwogICAgfQp9CiAgICAgIApmaXp6YnV6eigx\nMDApOw==\n",
+  "language_id": 63,
+  "stdin": "",
+  "expected_output": null,
+  "stdout": "MQoyCkZpenoKNApCdXp6CkZpenoKNwo4CkZpenoKQnV6egoxMQpGaXp6CjEz\nCjE0CkZpenpCdXp6CjE2CjE3CkZpenoKMTkKQnV6egpGaXp6CjIyCjIzCkZp\nenoKQnV6egoyNgpGaXp6CjI4CjI5CkZpenpCdXp6CjMxCjMyCkZpenoKMzQK\nQnV6egpGaXp6CjM3CjM4CkZpenoKQnV6ego0MQpGaXp6CjQzCjQ0CkZpenpC\ndXp6CjQ2CjQ3CkZpenoKNDkKQnV6egpGaXp6CjUyCjUzCkZpenoKQnV6ego1\nNgpGaXp6CjU4CjU5CkZpenpCdXp6CjYxCjYyCkZpenoKNjQKQnV6egpGaXp6\nCjY3CjY4CkZpenoKQnV6ego3MQpGaXp6CjczCjc0CkZpenpCdXp6Cjc2Cjc3\nCkZpenoKNzkKQnV6egpGaXp6CjgyCjgzCkZpenoKQnV6ego4NgpGaXp6Cjg4\nCjg5CkZpenpCdXp6CjkxCjkyCkZpenoKOTQKQnV6egpGaXp6Cjk3Cjk4CkZp\nenoKQnV6ego=\n",
+  "status_id": 3,
+  "created_at": "2023-07-15T12:13:27.760Z",
+  "finished_at": "2023-07-15T12:13:29.738Z",
+  "time": "0.032",
+  "memory": 7328,
+  "stderr": null,
+  "token": "2328d7fe-1f77-4433-9ac3-da27d2749531",
+  "number_of_runs": 1,
+  "cpu_time_limit": "5.0",
+  "cpu_extra_time": "1.0",
+  "wall_time_limit": "10.0",
+  "memory_limit": 128000,
+  "stack_limit": 64000,
+  "max_processes_and_or_threads": 60,
+  "enable_per_process_and_thread_time_limit": false,
+  "enable_per_process_and_thread_memory_limit": false,
+  "max_file_size": 1024,
+  "compile_output": null,
+  "exit_code": 0,
+  "exit_signal": null,
+  "message": null,
+  "wall_time": "0.032",
+  "compiler_options": null,
+  "command_line_arguments": null,
+  "redirect_stderr_to_stdout": false,
+  "callback_url": null,
+  "additional_files": null,
+  "enable_network": false,
+  "status": {
+    "id": 3,
+    "description": "Accepted"
+  },
+  "language": {
+    "id": 63,
+    "name": "JavaScript (Node.js 12.14.0)"
+  }
+}

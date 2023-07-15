@@ -38,7 +38,12 @@ export const postSubmission = async (
   submission: SubmissionRequest
 ): Promise<AxiosResponse<PostSubmissionResponse>> => {
   const config = await getConfig();
-  return axios.post(`${BASE_URL}/submissions`, submission, config);
+  const encodedSubmission: SubmissionRequest = {
+    source_code: btoa(submission.source_code),
+    language_id: submission.language_id,
+    stdin: btoa(submission.stdin),
+  };
+  return axios.post(`${BASE_URL}/submissions`, encodedSubmission, config);
 };
 
 export const getSubmission = async (

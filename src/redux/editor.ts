@@ -38,6 +38,9 @@ const languageSlice = createSlice({
     changeInput: (state, action) => {
       state.input = action.payload;
     },
+    changeOutput: (state, action) => {
+      state.output = action.payload;
+    },
   },
 });
 
@@ -46,7 +49,7 @@ export const selectEditorValue = (state: RootState) => state.editor.editorValue;
 export const selectInput = (state: RootState) => state.editor.input;
 export const selectOutput = (state: RootState) => state.editor.output;
 
-export const { changeLanguage, changeEditorValue, changeInput } =
+export const { changeLanguage, changeEditorValue, changeInput, changeOutput } =
   languageSlice.actions;
 
 export default languageSlice.reducer;
