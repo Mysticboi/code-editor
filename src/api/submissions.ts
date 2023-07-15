@@ -4,6 +4,7 @@ import {
   GetSubmissionResponse,
   PostSubmissionResponse,
 } from '../types';
+import { encodeBase64 } from '../utils';
 
 const BASE_URL = 'https://judge0-ce.p.rapidapi.com';
 
@@ -39,9 +40,9 @@ export const postSubmission = async (
 ): Promise<AxiosResponse<PostSubmissionResponse>> => {
   const config = await getConfig();
   const encodedSubmission: SubmissionRequest = {
-    source_code: btoa(submission.source_code),
+    source_code: encodeBase64(submission.source_code),
     language_id: submission.language_id,
-    stdin: btoa(submission.stdin),
+    stdin: encodeBase64(submission.stdin),
   };
   return axios.post(`${BASE_URL}/submissions`, encodedSubmission, config);
 };

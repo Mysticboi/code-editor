@@ -15,8 +15,12 @@ import {
 } from '../../redux/editor';
 
 import './app.scss';
-import { getSubmission, postSubmission } from '../../api/submissions';
 import { Status } from '../../types';
+import {
+  decodeBase64,
+  logSubmission,
+  postSubmissionAndGetResponse,
+} from '../../utils';
 
 const App = () => {
   const { value: language, id: languageId } = useAppSelector(selectLanguage);
@@ -29,67 +33,54 @@ const App = () => {
   const [responseSubmission, setResponseSubmission] = useState<{
     status?: Status;
     time?: number;
+    memory?: number;
   }>({});
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     dispatch(changeInput(e.target.value));
   };
 
+  const updateOutputFromResponse = (base64Output: string): void => {
+    dispatch(changeOutput(decodeBase64(base64Output)));
+  };
+
   const handleClick = async () => {
     setLoading(true);
-    const response = await postSubmission({
-      source_code: editorValue,
-      language_id: languageId,
-      stdin: input,
-    });
-    const { token } = response.data;
 
-    await sleep(2000);
-    let i = 0;
-    const getResponse = await getSubmission(token);
-    let {
+    const submission = await postSubmissionAndGetResponse(
+      editorValue,
+      languageId,
+      input
+    );
+    const {
+      failedFetching,
       status,
       stdout,
       stderr,
+      compileOutput,
       time,
-      compile_output: compileOutput,
-    } = getResponse.data;
-    for (i = 0; i < 5; i++) {
-      console.log('Fetching...', i);
-      await sleep(2000);
-      const getResponse = await getSubmission(token);
-      ({
-        status,
-        stdout,
-        stderr,
-        time,
-        compile_output: compileOutput,
-      } = getResponse.data);
-      if (status.id > 2) break;
-    }
+      memory,
+    } = submission;
     setLoading(false);
-    if (i === 4) {
+
+    if (failedFetching) {
       // eslint-disable-next-line no-alert
       alert('Failed calling Judge0 compile API');
       return;
     }
-    console.log('Receveid submission', {
-      status,
-      stderr: stderr && atob(stderr),
-      stdout: stdout && atob(stdout),
-      time,
-      compileOutput: compileOutput && atob(compileOutput),
-    });
-    if (status.id === 3 && stdout) {
-      dispatch(changeOutput(atob(stdout)));
+
+    logSubmission(submission);
+    if (status?.id === 3 && stdout) {
+      updateOutputFromResponse(stdout);
     } else if (stderr) {
-      dispatch(changeOutput(atob(stderr)));
+      updateOutputFromResponse(stderr);
     } else if (compileOutput) {
-      dispatch(changeOutput(atob(compileOutput)));
+      updateOutputFromResponse(compileOutput);
     }
     setResponseSubmission({
       status,
       time,
+      memory,
     });
   };
 
@@ -124,7 +115,12 @@ const App = () => {
             )}
             {responseSubmission.time && (
               <p className="response-title">
-                Processing time: {responseSubmission.time}s{' '}
+                Runtime: {responseSubmission.time} seconds{' '}
+              </p>
+            )}
+            {responseSubmission.memory && (
+              <p className="response-title">
+                Memory used: {responseSubmission.memory} kilobytes{' '}
               </p>
             )}
             {output}
@@ -142,14 +138,12 @@ const App = () => {
             className="compile-button"
             onClick={handleClick}
           >
-            {!loading ? <p>Compile</p> : <div className="loader" />}
+            {!loading ? <h2>Compile</h2> : <div className="loader" />}
           </button>
         </div>
       )}
     </div>
   );
 };
-
-const sleep = async (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 export default App;

@@ -1,4 +1,3 @@
-import React from 'react';
 import { marked } from 'marked';
 import { useAppSelector } from '../../hooks/redux';
 import { selectEditorValue } from '../../redux/editor';
@@ -6,8 +5,7 @@ import { selectEditorValue } from '../../redux/editor';
 import './markdownpreview.scss';
 
 const renderer = new marked.Renderer();
-renderer.link = (href, title, text) =>
-  `<a target="_blank" href="${href}">${text}</a>`;
+renderer.link = (href, text) => `<a target="_blank" href="${href}">${text}</a>`;
 
 marked.setOptions({
   renderer,

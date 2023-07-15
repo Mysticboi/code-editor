@@ -1,3 +1,5 @@
+// Script to import all monaco themes into a json file
+
 const fs = require('fs');
 const monacoThemes = require('monaco-themes/themes/themelist.json');
 

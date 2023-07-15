@@ -53,7 +53,9 @@
         "react/function-component-definition":"off",
         "no-plusplus":"off",
         "no-await-in-loop":"off",
-        "no-promise-executor-return":"off"
+        "no-promise-executor-return":"off",
+        "react/react-in-jsx-scope":"off",
+        "one-var":"off"
     },
     "settings": {
         "import/resolver":{

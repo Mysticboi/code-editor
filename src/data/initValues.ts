@@ -5,13 +5,13 @@ int main()
 {
     for (int i = 1; i <= 100; i++) {
         if (i % 15 == 0)
-            std::cout << "FizzBuzz"<<std::endl;
+            std::cout << "FizzBuzz"<< std::endl;
         else if (i % 5 == 0)
-            std::cout << "Buzz"<<std::endl;
+            std::cout << "Buzz" << std::endl;
         else if (i % 3 == 0)
-            std::cout << "Fizz"<<std::endl;
+            std::cout << "Fizz" << std::endl;
         else
-            std::cout << i << <<std::endl;
+            std::cout << i << std::endl;
     }
     return 0;
 }`,
@@ -74,7 +74,7 @@ fizzbuzz(100);`,
 }
       
 fizzbuzz(100)`,
-  java: `public class java{
+  java: `public class Main{
         public static void main(String[] args)
         {
             for (int i=1; i<=100; i++) {
