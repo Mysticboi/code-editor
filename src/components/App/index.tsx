@@ -149,7 +149,11 @@ const App = () => {
               className="compile-button"
               onClick={handleClick}
             >
-              {!loading ? <h2>Compile</h2> : <div className="loader" />}
+              {!loading ? (
+                <h3>Compile and Execute</h3>
+              ) : (
+                <div className="loader" />
+              )}
             </button>
           </div>
         )}

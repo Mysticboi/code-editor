@@ -9,6 +9,8 @@ The code editor also supports markdown editing with an automatic preview.
 This project was deployed using [Vercel](https://vercel.com/) and is available [live here](https://code-editor-mysticboi.vercel.app/) . 
 
 The project is limited to 100 API calls to the Judge0 API per day
+
+![demo](demo.png)
 ## Techologies used
 
 - ***React***: the famous frontend library. Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
