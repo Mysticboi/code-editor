@@ -37,6 +37,12 @@ const App = () => {
     memory?: number;
   }>({});
 
+  // If submissionStatus different than 3(ACCEPTED) then it's an error status, display the output in red
+  const outputClassName =
+    responseSubmission.status && responseSubmission.status.id !== 3
+      ? 'output error'
+      : 'output';
+
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     dispatch(changeInput(e.target.value));
   };
@@ -109,16 +115,7 @@ const App = () => {
         ) : (
           <div className="output-container">
             <h2>Output</h2>
-            <div
-              className="output"
-              style={{
-                color:
-                  responseSubmission.status &&
-                  responseSubmission.status.id !== 3
-                    ? 'red'
-                    : 'bluesky',
-              }}
-            >
+            <div className={outputClassName}>
               {responseSubmission.status && (
                 <p className="response-title">
                   Response with status: {responseSubmission.status.description}
